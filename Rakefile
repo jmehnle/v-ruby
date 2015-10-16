@@ -12,14 +12,16 @@ end
 require 'rake'
 
 require 'jeweler'
+require_relative 'lib/v'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "v-ruby"
+  gem.version = V::VERSION
   gem.homepage = "http://github.com/jmehnle/v-ruby"
-  gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "jmehnle@agari.com"
+  gem.license = "Apache-2.0"
+  gem.summary = %Q{V — simple version class for Ruby}
+  gem.description = %Q{A simple version class for Ruby based on Gem::Version, adding some features.}
+  gem.email = "julian@mehnle.net"
   gem.authors = ["Julian Mehnle"]
   # dependencies defined in Gemfile
 end
