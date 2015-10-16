@@ -25,7 +25,8 @@ Gem::Specification.new do |s|
     "Rakefile",
     "lib/v.rb",
     "test/helper.rb",
-    "test/test_v.rb"
+    "test/test_v.rb",
+    "v-ruby.gemspec"
   ]
   s.homepage = "http://github.com/jmehnle/v-ruby"
   s.licenses = ["Apache-2.0"]
