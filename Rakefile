@@ -12,14 +12,14 @@ end
 require 'rake'
 
 require 'jeweler'
-require_relative 'lib/v'
+require_relative 'lib/v1'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
-  gem.name = "v-ruby"
+  gem.name = "v1"
   gem.version = V::VERSION
-  gem.homepage = "http://github.com/jmehnle/v-ruby"
+  gem.homepage = "http://github.com/jmehnle/v1-ruby"
   gem.license = "Apache-2.0"
-  gem.summary = %Q{V — simple version class for Ruby}
+  gem.summary = %Q{v1 — simple version class for Ruby}
   gem.description = %Q{A simple version class for Ruby based on Gem::Version, adding some features.}
   gem.email = "julian@mehnle.net"
   gem.authors = ["Julian Mehnle"]
@@ -47,7 +47,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "v-ruby #{version}"
+  rdoc.title = "v1 #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

@@ -1,9 +1,9 @@
-= v-ruby
+= v1
 
-Description goes here.
+A simple version class for Ruby based on Gem::Version, adding some features.
 
-== Contributing to v-ruby
- 
+== Contributing to v1
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
@@ -16,4 +16,3 @@ Description goes here.
 
 Copyright (c) 2015 Julian Mehnle. See LICENSE.txt for
 further details.
-
