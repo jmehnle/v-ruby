@@ -1,5 +1,5 @@
 class V < Gem::Version
-  VERSION = '0.0.0'
+  VERSION = '0.0.1'
 
   def major
     return segments[0]
@@ -9,14 +9,16 @@ class V < Gem::Version
     return segments[1]
   end
 
-  def patch
+  def build
     return segments[2]
   end
+  alias_method :patch, :build
+  alias_method :tiny,  :build
 
   def numeric
     return @numeric ||= begin
-      major, minor, patch = segments
-      major + 0.001 * minor + 0.000001 * patch
+      major, minor, build = segments
+      major + 0.001 * minor.to_i + 0.000001 * build.to_i
     end
   end
 end
