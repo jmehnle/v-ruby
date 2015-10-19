@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
     "lib/v1.rb",
     "test/helper.rb",
     "test/test_v1.rb",
-    "v1-ruby.gemspec"
+    "v1.gemspec"
   ]
   s.homepage = "http://github.com/jmehnle/v1-ruby"
   s.licenses = ["Apache-2.0"]
